@@ -17,3 +17,21 @@ console.log(typeof(middleName));
 console.log(typeof(selectColor));
 
 
+console.log();
+
+
+let person = {
+    name : 'john',
+    age  : 20,
+}
+
+
+console.log(person.name);
+person.name = 'Mary';
+console.log(person.name);
+
+let changeAge = 'age';
+person[changeAge] = 23;
+console.log(person.age);
+
+
