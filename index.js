@@ -7,7 +7,7 @@ let isMarried = true;
 let middleName = undefined;
 let selectColor = null;
 
-
+//Variables
 console.log('Types of Variables');
 
 console.log(typeof(name));
@@ -16,16 +16,15 @@ console.log(typeof(isMarried));
 console.log(typeof(middleName));
 console.log(typeof(selectColor));
 
-
 console.log();
 
-
+//Objects
 let person = {
     name : 'john',
     age  : 20,
 }
 
-
+//Dot Notatio and Bracket Notation to Access a object Property
 console.log(person.name);
 person.name = 'Mary';
 console.log(person.name);
