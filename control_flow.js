@@ -9,7 +9,7 @@ else if(hour >= 12 && hour <=15)
 else
     console.log('Good Evening');
 
-    
+
 
 //Switch case
 let role = 'Person';
@@ -26,12 +26,4 @@ switch(role){
     default:
         console.log('Unknown User');
         break;
-}
-
-
-
-
-
-
-    
 }
