@@ -29,3 +29,17 @@ console.log(circle2);
 
 circle2.draw();
 
+
+console.log();
+
+
+function Circle(radius){
+    this.radius=radius;
+    this.draw= function(){
+        console.log("Hello Pascal Notation");
+    };
+}
+
+const circle3 = new Circle(1);
+console.log(circle);
+
