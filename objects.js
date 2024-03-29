@@ -1,3 +1,5 @@
+//OOP Concepts
+
 const circle = {
     radius : 10,
     draw   : function(){
@@ -5,4 +7,25 @@ const circle = {
     }
 };
 circle.draw();
-//OOP concepts
+
+
+console.log();
+
+
+//Factory Functions
+function createCircles(radius){
+    return{
+        radius,
+        draw(){
+            console.log("Draw function is Here");
+        },
+    }
+};
+const circle1 = createCircles(1);
+console.log(circle1);
+
+const circle2 = createCircles(10);
+console.log(circle2);
+
+circle2.draw();
+
