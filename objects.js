@@ -58,8 +58,29 @@ console.log(another);
 const another_1 = {...circle_2}
 console.log(another_1);
 
+
 console.log();
 
 
 // Math Object
 console.log(Math.random());
+
+
+//Strings
+console.log();
+
+const message = "  This is my message  ";
+const strObj = new String("Hello");
+
+console.log(message.length);
+console.log(message.trim());  //Remove the whitespace between commas and letters
+
+const message_1 = "  This is my \n New message  ";
+console.log(message_1);
+
+console.log(message.split(' '));
+
+
+
+
+
