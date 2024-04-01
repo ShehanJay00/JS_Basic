@@ -45,6 +45,7 @@ console.log(circle);
 
 
 
+console.log();
 
 const circle_2 = {
     radius : 10,
@@ -54,5 +55,11 @@ const circle_2 = {
 const another = Object.assign({} , circle_2);
 console.log(another);
 
+const another_1 = {...circle_2}
+console.log(another_1);
+
+console.log();
 
 
+// Math Object
+console.log(Math.random());
