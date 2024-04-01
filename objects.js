@@ -43,3 +43,16 @@ function Circle(radius){
 const circle3 = new Circle(1);
 console.log(circle);
 
+
+
+
+const circle_2 = {
+    radius : 10,
+    width : 5,
+}
+
+const another = Object.assign({} , circle_2);
+console.log(another);
+
+
+
