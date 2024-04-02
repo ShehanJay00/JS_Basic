@@ -23,3 +23,16 @@ const courseIndex = courses.findIndex(function(courseIndex){
 console.log(courseIndex)
 
 
+console.log()
+
+
+//Arrow Functions
+// Used for pass a function as a argument for a method
+
+const course_2_Index = courses.findIndex((courseIndex) =>{
+    return courseIndex.name === 'cousera';
+});
+console.log(course_2_Index)
+
+const course_2 = courses.find(course => course.name === 'IBM')
+console.log(course_2)
