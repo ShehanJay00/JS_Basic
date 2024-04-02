@@ -81,6 +81,14 @@ console.log(message_1);
 console.log(message.split(' '));
 
 
+console.log();
+
+// Date object
+const now = new Date();
+console.log(now);
+console.log(now.toISOString());
+now.setFullYear(2022);
+console.log(now);
 
 
 
