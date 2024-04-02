@@ -130,3 +130,41 @@ function areSame(address1 , address2){
 console.log(areEqual(address1,address2));
 console.log(areSame(address1,address2));
 
+
+
+console.log()
+
+//Blog Post
+let post = {
+    title : 'title',
+    body  : 'hellow hellow this is a blogpost',
+    author: 'c',
+    views : '1000',
+    comment : [
+        {author : 'shehan' , body : 'Nothing'},
+        {author : 'Malinda' , body : 'Full'}
+    ],
+    isLive : true,
+}
+console.log(post)
+console.log()
+console.log(post.comment)
+
+console.log()
+
+let post_2 = new Post('This is Title' , 'This is Name' , 'This is Author')
+
+function Post(title,body,author){
+    this.title = title;
+    this.body  = body;
+    this.author=author;
+    this.views = 0;
+    this.comment = [];   //empty array
+    this.isLive = false;
+}
+console.log(post_2)
+
+console.log()
+
+
+//Price Range Object
