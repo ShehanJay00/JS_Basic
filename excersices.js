@@ -164,7 +164,57 @@ function Post(title,body,author){
 }
 console.log(post_2)
 
+console.log();
+
+
+console.log('Array Excercises')
+//Array Excercises
+const numRange = arrayFromRange(1,100)
+console.log(numRange);
+
+function arrayFromRange(min ,max){
+    const output = [];
+    for(let i = min ; i <= max ; i++)
+        output.push(i);
+    return output
+}
+
+console.log()
+
+const nums = [1,2,3,4,5,6,7,8,9,10];
+const out = except(nums,[1,2,3,4]);
+console.log(out);
+
+function except(array,exceptValues){
+    
+    const output = [];
+
+    for(let elements of array){
+
+        if(!exceptValues.includes(elements))
+            output.push(elements);
+    }
+    return output
+}
+
+
 console.log()
 
 
-//Price Range Object
+// Move Element in Array
+const moveNums = [1,2,4,6,8,10];
+const outputNum = move(moveNums ,1 , 2);
+console.log(outputNum);
+
+function move(array , index , offset){
+    const position = index + offset;
+    if(position >= array.length || position < 0){
+        console.error("Invalid Offset")
+        return;
+    }
+    const output = [...array];    //Create a copy of Array
+    const element = output.splice(index , 1)[0];   //[0]:accesses the first element of the array returned by the splice method.
+    output.splice(position,0,element)
+    return output;
+};
+
