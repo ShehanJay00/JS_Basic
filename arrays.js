@@ -86,3 +86,27 @@ languages.sort(function(one,two){
 });
 
 console.log(languages);
+
+
+console.log()
+
+
+const nm = [1,2,3,4,5,-10]
+const checkPositive = nm.every((value) => {return value >= 0} );
+const atLeastOnePositive = nm.some((value) => {return value >= 0} );
+
+console.log(checkPositive)
+console.log(atLeastOnePositive)
+
+console.log();
+
+// Maping and array
+const items = nm.map(value => ({key: value}));
+
+const chaining = nm
+                    .filter(n => n > 1)
+                    .map(n => ({value :n}))
+                    .filter(obj => obj.value >1)
+                    .map(obj => obj.value);
+
+console.log(chaining);                   
