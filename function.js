@@ -22,7 +22,7 @@ console.log(person.fullName);
 
 console.log();
 
-
+// Try and Catch
 const person_2 = {
     firstName : 'Shehan',
     lastName : 'Jayasooriya',
@@ -51,3 +51,19 @@ catch(e){
 
 console.log(person_2);
 console.log(person_2.fullName);
+
+
+
+console.log();
+
+
+// Var type variables
+function varType(){
+    if(true){
+        var color = 'red';
+        let age = 20;
+    }
+    console.log(color);
+    //console.log(age);
+}
+console.log(varType());
