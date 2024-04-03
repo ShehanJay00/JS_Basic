@@ -67,3 +67,14 @@ function varType(){
     //console.log(age);
 }
 console.log(varType());
+
+
+console.log();
+
+console.log(sum([1,2,3,4,5,6,7,8,9,10]));
+function sum(...items){                   //...items(rest operator) get values as an array, so in here array of array
+    if(items.length === 1 && Array.isArray(items[0]))   //Get the First element of the ...items Array
+                                   //Copy all the items by spread operator
+
+    return items.reduce((a,b) => a + b);
+}
