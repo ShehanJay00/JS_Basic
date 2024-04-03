@@ -234,3 +234,40 @@ function countOccurences(array , searchElement){
         return accumulator + occurence;  // this return is part of reduce method
     },0);
 }
+
+
+console.log();
+// Max value using Reduce
+const maxNumArray = [1,2,3,4,5,6,6,7,9,10];
+const max = getMax_2(maxNumArray);
+console.log(max);
+
+function getMax_2(array){
+    if(array.length === 0) return undefined;
+
+    return array.reduce((acc, curr) => (acc > curr) ? acc : curr);
+}
+
+
+console.log();
+//Movie Rating
+
+const movies = [
+    {tite : 'a' , year : 2018 , rating : 4.5},
+    {tite : 'b' , year : 2019 , rating : 4.0},
+    {tite : 'c' , year : 2020 , rating : 4.7},
+    {tite : 'd' , year : 2021 , rating : 4.3},
+    {tite : 'e' , year : 2022 , rating : 4.9},
+];
+
+const yourMovie = movies
+    .filter(movie => movie.year > 2017 && movie.rating > 4)
+    .sort((movie1,movie2) => movie1.rating - movie2.rating)    //.sort((a,b) =>{ a < b => -1})                                                        //
+    .reverse()                                                 // Returning -1 1 and 0 from sort methodis done here by single line
+    .map(movie => movie.tite);
+
+    console.log(yourMovie);
+
+
+
+
