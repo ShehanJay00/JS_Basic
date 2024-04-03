@@ -110,3 +110,9 @@ const chaining = nm
                     .map(obj => obj.value);
 
 console.log(chaining);                   
+
+console.log();
+
+// Reduce Method
+const reduced = nm.reduce((accumulator,currentValue) => accumulator + currentValue);
+console.log(reduced)
