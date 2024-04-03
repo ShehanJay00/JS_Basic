@@ -218,3 +218,19 @@ function move(array , index , offset){
     return output;
 };
 
+
+console.log();
+// Count Occurences
+const occNumbers = [1,2,1,2,1,2,1,2,1,2,1,2,1,12,];
+const countOcc = countOccurences(occNumbers,1);
+console.log(countOcc);
+
+function countOccurences(array , searchElement){
+    // we use reduce function here
+
+    return array.reduce((accumulator,current) =>{
+        const occurence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator,current,searchElement);
+        return accumulator + occurence;  // this return is part of reduce method
+    },0);
+}
